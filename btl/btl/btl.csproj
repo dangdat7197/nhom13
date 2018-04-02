@@ -66,7 +66,31 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\default\backgroud.jpg" />
+    <Content Include="App_Themes\default\background.jpg" />
+    <Content Include="App_Themes\default\css\bootstrap-grid.css" />
+    <Content Include="App_Themes\default\css\bootstrap-grid.min.css" />
+    <Content Include="App_Themes\default\css\bootstrap-reboot.css" />
+    <Content Include="App_Themes\default\css\bootstrap-reboot.min.css" />
+    <Content Include="App_Themes\default\css\bootstrap.css" />
+    <Content Include="App_Themes\default\css\bootstrap.min.css" />
+    <Content Include="App_Themes\default\js\bootstrap.bundle.js" />
+    <Content Include="App_Themes\default\js\bootstrap.bundle.min.js" />
+    <Content Include="App_Themes\default\js\bootstrap.js" />
+    <Content Include="App_Themes\default\js\bootstrap.min.js" />
+    <Content Include="App_Themes\default\style.css" />
+    <Content Include="home.aspx" />
     <Content Include="packages.config" />
+    <Content Include="App_Themes\default\css\bootstrap-grid.css.map" />
+    <Content Include="App_Themes\default\css\bootstrap-grid.min.css.map" />
+    <Content Include="App_Themes\default\css\bootstrap-reboot.css.map" />
+    <Content Include="App_Themes\default\css\bootstrap-reboot.min.css.map" />
+    <Content Include="App_Themes\default\css\bootstrap.css.map" />
+    <Content Include="App_Themes\default\css\bootstrap.min.css.map" />
+    <Content Include="App_Themes\default\js\bootstrap.bundle.js.map" />
+    <Content Include="App_Themes\default\js\bootstrap.bundle.min.js.map" />
+    <Content Include="App_Themes\default\js\bootstrap.js.map" />
+    <Content Include="App_Themes\default\js\bootstrap.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,8 +102,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
